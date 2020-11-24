@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { UserModule } from './user/user.module';
 import { HttpModule } from './http';
 import { StartupModule } from './startup';
+import { LayoutModule } from './layout';
 
 @NgModule({
   declarations: [],
@@ -10,7 +11,10 @@ import { StartupModule } from './startup';
     CommonModule,
     UserModule,
     HttpModule,
-    StartupModule
+    StartupModule,
+    LayoutModule
+  ],
+  exports: [
   ]
 })
 export class CoreModule { }

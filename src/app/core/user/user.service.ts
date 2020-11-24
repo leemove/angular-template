@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { Observable, of, throwError } from 'rxjs';
 import { User } from './models';
 import { tap } from 'rxjs/operators';
 @Injectable({
@@ -20,7 +20,7 @@ export class UserService {
       name: 'a'
     })
     .pipe(
-      tap(user => this.user = user)
+      tap(user => this.user = user),
     );
   }
 
