@@ -66,7 +66,10 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-template:build"
+            "browserTarget": "angular-template:build",
+            "proxyConfig": "src/config/proxy.conf.json",
+            "host": "0.0.0.0",
+            "open": true
           },
           "configurations": {
             "production": {
@@ -123,6 +126,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-template"
+    }
+  },
+  "defaultProject": "angular-template",
+  "cli": {
+    "analytics": false
+  }
 }

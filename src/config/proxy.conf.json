@@ -1,0 +1,11 @@
+{
+    "/user": {
+      "target": "http://ompjob.ws.netease.com/delicacy/",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug",
+      "pathRewrite": {
+      }
+    }
+  }
+  
