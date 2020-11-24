@@ -24,6 +24,14 @@ export class UserService {
     );
   }
 
+  logout(): Observable<any> {
+    this.user = undefined;
+    /**
+     * TODO: 这里可以替换成退出登录的接口
+     */
+    return of(null);
+  }
+
   constructor() { }
 
 }
